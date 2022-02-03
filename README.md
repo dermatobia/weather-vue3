@@ -1,5 +1,8 @@
 # weather-vue
 
+## Demo
+https://weather-vue3.herokuapp.com/
+
 ## Project setup
 ```
 npm install
