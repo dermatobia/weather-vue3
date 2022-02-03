@@ -24,23 +24,21 @@
   </div>
   <hr>
   <div class="detail">
-    <div>
-      <div class="item-wrap">
-        <data-item title="Sunrise" :data="time.sunrise" />
-        <data-item title="Sunset" :data="time.sunset" />
-      </div>
-      <div class="item-wrap">
-        <data-item title="Humidity" :data="city.current.humidity + '%'" />
-        <data-item title="Pressure" :data="pressure(city.current.pressure)" />
-      </div>
-      <div class="item-wrap">
-        <data-item title="Wind" :data="speed(city.current.wind_speed)" />
-        <data-item title="Feels like" :data="temp(city.current.feels_like)" />
-      </div>
-      <div class="item-wrap">
-        <data-item title="UV Index" :data="city.current.uvi" />
-        <data-item title="Visibility" :data="visibility(city.current.visibility)" />
-      </div>
+    <div class="item-wrap">
+      <data-item title="Sunrise" :data="time.sunrise" />
+      <data-item title="Sunset" :data="time.sunset" />
+    </div>
+    <div class="item-wrap">
+      <data-item title="Humidity" :data="city.current.humidity + '%'" />
+      <data-item title="Pressure" :data="pressure(city.current.pressure)" />
+    </div>
+    <div class="item-wrap">
+      <data-item title="Wind" :data="speed(city.current.wind_speed)" />
+      <data-item title="Feels like" :data="temp(city.current.feels_like)" />
+    </div>
+    <div class="item-wrap">
+      <data-item title="UV Index" :data="city.current.uvi" />
+      <data-item title="Visibility" :data="visibility(city.current.visibility)" />
     </div>
   </div>
 </div>

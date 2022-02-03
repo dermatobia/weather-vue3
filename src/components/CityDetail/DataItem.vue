@@ -3,8 +3,8 @@
     <p class="title">{{ title }}</p>
     <p class="data">{{ data }}</p>
   </div>
-  
 </template>
+
 <script>
 export default {
   name: 'DataItem',

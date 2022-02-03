@@ -38,13 +38,13 @@ export default {
     ...mapGetters(['cities', 'errorMsg', 'findCity']),
   },
   methods: {
-    ...mapActions(['clearError', 'setError','fetchWeather']),
+    ...mapActions(['clearError', 'setError', 'fetchWeather', 'deleteCity']),
     closeErrorMsg() {
       this.searchCityVal = '';
       this.clearError();
     },
     removeCity(cityName) {
-      this.$store.dispatch('deleteCity', cityName);
+      this.deleteCity(cityName);
     },
     submitForm() {
       if (!this.searchCityVal) return;
